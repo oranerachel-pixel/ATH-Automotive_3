@@ -1,4 +1,4 @@
-// MENU BURGER MOBILE
+// Burger menu mobile
 const burger = document.getElementById('burger');
 const menu = document.getElementById('menu');
 
