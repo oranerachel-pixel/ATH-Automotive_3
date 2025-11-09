@@ -8,47 +8,22 @@
 </head>
 <body>
 
- <!-- Font Awesome pour les icônes réseaux -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Font Awesome pour les icônes réseaux -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <style>
-    :root {
-      --dark-bg: #111111;
-      --dark-bg-alt: #1a1a1a;
-      --accent: #e03b2d;
-      --text-light: #ffffff;
-      --text: #f5f5f5;
-      --font-main: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
+<div class="top-bar">
+  <!-- Logos à gauche -->
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
 
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: var(--dark-bg);
-      color: var(--text);
-      font-family: var(--font-main);
-      line-height: 1.6;
-    }
-
-    /* Top-bar */
-    .top-bar {
-      background-color: var(--dark-bg);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-    }
-
-    .top-bar .logo { height: 40px; }
-
-    .top-bar .social-icons a {
-      color: var(--text-light);
-      margin-left: 15px;
-      font-size: 18px;
-      transition: color 0.3s;
-    }
-
-    .top-bar .social-icons a:hover { color: var(--accent); }
+  <!-- Texte ou lien à droite (ex: contact) -->
+  <div class="top-right">
+    <span>Contact: info@tonsite.com</span>
+  </div>
+</div>
 
   <!-- HERO -->
   <section class="hero">
