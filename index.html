@@ -3,59 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FTEC Style Performance</title>
+  <title>TonSite Auto Performance</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- BARRE RESEAUX SOCIAUX EN HAUT -->
+  <div class="top-bar">
+    <div class="social-links">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </div>
+
   <!-- HEADER -->
   <header>
-    <div class="container">
-      <h1 class="logo">ATH Automotive</h1>
-      <nav>
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#shop">Shop</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="logo">TonLogo</div>
+
+    <!-- Menu -->
+    <nav class="menu">
+      <a href="#">Accueil</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <!-- Bouton burger pour mobile -->
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </header>
 
   <!-- HERO -->
-  <section id="hero">
-    <div class="hero-text">
-      <h2>BOOSTEZ VOTRE PERFORMANCE</h2>
-      <p>Reprogrammation moteur, E85, pièces performance</p>
-      <a href="#contact" class="btn">Prendre rendez-vous</a>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>BOOSTEZ VOTRE PERFORMANCE</h1>
+      <p>Reprogrammation moteur, E85, pièces et plus encore.</p>
+      <a href="#" class="btn">Trouver mon centre</a>
     </div>
   </section>
 
   <!-- SERVICES -->
-  <section id="services" class="grid">
+  <section class="services">
     <div class="service">
-      <img src="images/engine.jpg" alt="Reprogrammation moteur">
-      <h3>Reprogrammation moteur</h3>
-      <p>Optimisez puissance et consommation</p>
+      <img src="engine.jpg" alt="Reprogrammation moteur">
+      <h2>Reprogrammation moteur</h2>
+      <p>Gagnez jusqu’à +30% de puissance et -10% de consommation.</p>
     </div>
     <div class="service">
-      <img src="images/fuel.jpg" alt="Conversion E85">
-      <h3>Conversion E85</h3>
-      <p>Économique et écologique</p>
+      <img src="fuel.jpg" alt="Conversion E85">
+      <h2>Conversion E85</h2>
+      <p>Roulez à l’éthanol et faites des économies durables.</p>
     </div>
     <div class="service">
-      <img src="images/parts.jpg" alt="Pièces performance">
-      <h3>Pièces performance</h3>
-      <p>Turbos, suspensions, filtres</p>
+      <img src="parts.jpg" alt="Pièces performance">
+      <h2>Pièces performance</h2>
+      <p>Turbos, filtres, suspensions — tout pour vos projets.</p>
     </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Prêt à booster votre voiture ?</h2>
+    <a href="#" class="btn">Prendre rendez-vous</a>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 FTEC — Tous droits réservés</p>
+    © 2025 TonSite — Tous droits réservés
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
