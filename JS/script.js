@@ -1,6 +1,6 @@
 // MENU BURGER MOBILE
 const burger = document.getElementById('burger');
-const menu = document.querySelector('.menu');
+const menu = document.getElementById('menu');
 
 burger.addEventListener('click', () => {
   menu.classList.toggle('active');
