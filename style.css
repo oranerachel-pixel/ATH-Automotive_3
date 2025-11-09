@@ -1,1 +1,99 @@
+/* Général */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+header .logo {
+  color: #ff0000;
+  font-size: 24px;
+  font-weight: bold;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header nav a {
+  color: #fff;
+  text-decoration: none;
+}
+header nav a:hover {
+  color: #ff0000;
+}
+
+/* Hero */
+#hero {
+  height: 100vh;
+  background: url('images/hero.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text {
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  padding: 30px;
+  border-radius: 10px;
+}
+.hero-text h2 {
+  font-size: 50px;
+  color: #ff0000;
+}
+.hero-text p {
+  font-size: 20px;
+}
+.hero-text .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Services */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 100px 20px 50px;
+}
+.service {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.service img {
+  width: 100%;
+  border-radius: 10px;
+}
+.service h3 {
+  color: #ff0000;
+  margin-top: 15px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: #888;
+}
 
