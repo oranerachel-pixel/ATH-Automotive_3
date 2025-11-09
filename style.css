@@ -1,19 +1,12 @@
-/* --- GENERAL --- */
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #000;
-  color: #fff;
-}
 :root {
   --dark-bg: #111111;
-  --dark-bg-alt: #1a1a1a;
   --accent: #e03b2d;
   --text-light: #ffffff;
   --text: #f5f5f5;
   --font-main: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* --- GENERAL --- */
 body {
   margin: 0;
   padding: 0;
@@ -23,17 +16,18 @@ body {
   line-height: 1.6;
 }
 
+/* --- TOP BAR --- */
 .top-bar {
   background-color: var(--dark-bg);
   display: flex;
-  justify-content: flex-start; /* Logos collés à gauche */
+  justify-content: flex-start; /* Logos à gauche */
   align-items: center;
-  padding: 10px 20px;
+  padding: 8px 20px;
 }
 
 .top-bar .social-icons a {
   color: var(--text-light);
-  margin-right: 15px; /* espace entre icônes */
+  margin-right: 15px;
   font-size: 18px;
   transition: color 0.3s;
 }
@@ -44,32 +38,45 @@ body {
 
 /* --- HEADER --- */
 header {
+  background-color: var(--dark-bg);
+  padding: 15px 20px;
+}
+
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
-  background-color: #000;
   position: relative;
 }
+
+/* Logo */
 .logo {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
-  color: #ff0000;
-}
-.menu {
-  display: flex;
-  gap: 30px;
-}
-.menu a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-}
-.menu a:hover {
-  color: #ff0000;
+  color: var(--accent);
 }
 
-/* --- BURGER MENU --- */
+/* Menu */
+.menu {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: var(--accent);
+}
+
+/* Burger menu mobile */
 .burger {
   display: none;
   flex-direction: column;
@@ -77,10 +84,9 @@ header {
   gap: 5px;
 }
 .burger span {
-  display: block;
   width: 25px;
   height: 3px;
-  background-color: #fff;
+  background-color: var(--text-light);
 }
 
 /* --- HERO --- */
@@ -90,7 +96,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 .hero-content {
   background-color: rgba(0,0,0,0.6);
@@ -107,7 +112,7 @@ header {
   margin-bottom: 20px;
 }
 .btn {
-  background-color: #ff0000;
+  background-color: var(--accent);
   color: #fff;
   padding: 12px 25px;
   border-radius: 5px;
@@ -143,7 +148,7 @@ header {
   margin-bottom: 15px;
 }
 .service h2 {
-  color: #ff0000;
+  color: var(--accent);
   margin-bottom: 10px;
 }
 .service p {
@@ -158,12 +163,12 @@ header {
 .cta h2 {
   font-size: 32px;
   margin-bottom: 20px;
-  color: #ff0000;
+  color: var(--accent);
 }
 
 /* --- FOOTER --- */
 footer {
-  background-color: #000;
+  background-color: var(--dark-bg);
   color: #888;
   text-align: center;
   padding: 20px;
@@ -180,7 +185,7 @@ footer {
     top: 60px;
     left: 0;
     right: 0;
-    background-color: #000;
+    background-color: var(--dark-bg);
     padding: 20px;
   }
   .menu.active {
