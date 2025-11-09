@@ -23,29 +23,23 @@ body {
   line-height: 1.6;
 }
 
-/* Top-bar */
 .top-bar {
   background-color: var(--dark-bg);
   display: flex;
-  justify-content: space-between; /* Espace entre icônes gauche et contact droite */
+  justify-content: flex-start; /* Logos collés à gauche */
   align-items: center;
   padding: 10px 20px;
 }
 
 .top-bar .social-icons a {
   color: var(--text-light);
-  margin-right: 15px; /* Espace entre icônes */
+  margin-right: 15px; /* espace entre icônes */
   font-size: 18px;
   transition: color 0.3s;
 }
 
 .top-bar .social-icons a:hover {
   color: var(--accent);
-}
-
-.top-bar .top-right {
-  color: var(--text-light);
-  font-size: 14px;
 }
 
 /* --- HEADER --- */
