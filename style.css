@@ -37,42 +37,25 @@ body {
 }
 
 /* --- HEADER --- */
-header {
-  background-color: var(--dark-bg);
-  padding: 15px 20px;
-}
-
 .header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between; /* logo à gauche, burger à droite */
   position: relative;
 }
+
+/* Menu centré sans absolute */
+.menu {
+  display: flex;
+  gap: 40px;
+  margin: 0 auto; /* centrer horizontalement dans le header */
+}
+
 
 /* Logo */
 .logo {
   font-size: 28px;
   font-weight: bold;
-  color: var(--accent);
-}
-
-/* Menu */
-.menu {
-  display: flex;
-  gap: 40px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.menu a {
-  color: var(--text-light);
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
-}
-
-.menu a:hover {
   color: var(--accent);
 }
 
