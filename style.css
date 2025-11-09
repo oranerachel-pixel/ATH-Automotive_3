@@ -20,37 +20,30 @@ body {
 .top-bar {
   background-color: var(--dark-bg);
   display: flex;
-  justify-content: flex-start; /* Logos à gauche */
+  justify-content: flex-start;
   align-items: center;
   padding: 8px 20px;
 }
-
 .top-bar .social-icons a {
   color: var(--text-light);
   margin-right: 15px;
   font-size: 18px;
   transition: color 0.3s;
 }
-
 .top-bar .social-icons a:hover {
   color: var(--accent);
 }
 
 /* --- HEADER --- */
-.header-container {
-  display: flex;
+header {
+  background-color: var(--dark-bg);
+  padding: 15px 20px;
+}
+.header-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between; /* logo à gauche, burger à droite */
-  position: relative;
 }
-
-/* Menu centré sans absolute */
-.menu {
-  display: flex;
-  gap: 40px;
-  margin: 0 auto; /* centrer horizontalement dans le header */
-}
-
 
 /* Logo */
 .logo {
@@ -59,7 +52,23 @@ body {
   color: var(--accent);
 }
 
-/* Burger menu mobile */
+/* Menu centré */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.menu a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+.menu a:hover {
+  color: var(--accent);
+}
+
+/* Burger mobile */
 .burger {
   display: none;
   flex-direction: column;
